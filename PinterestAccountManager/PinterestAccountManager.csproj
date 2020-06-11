@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28CF709A-983B-4C31-BEA9-F82C5DC39730}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PinterestAccountManager</RootNamespace>
+    <AssemblyName>PinterestAccountManagerx</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PinterestAccountManager.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Graphics-Vibe-Neon-Glow-Social-Pinterest.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dialogs.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="pincore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>PinSharp-2.2.5\PinSharp\bin\Debug\net45\pincore.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppHelper\Helper.cs" />
+    <Compile Include="AppHelper\TaskStatus.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="ExcelFileWriter.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PinObject.cs" />
+    <Compile Include="Pinterst\API\Bulider\IPinApiBuilder.cs" />
+    <Compile Include="Pinterst\API\PinApi.cs" />
+    <Compile Include="Pinterst\API\IPinApi.cs" />
+    <Compile Include="Pinterst\API\PinApiConstants.cs" />
+    <Compile Include="Pinterst\API\Processors\IPinProcessor.cs" />
+    <Compile Include="Pinterst\API\Processors\PinProcessor.cs" />
+    <Compile Include="Pinterst\API\Processors\IUserProcessor.cs" />
+    <Compile Include="Pinterst\API\Processors\UserProcessor.cs" />
+    <Compile Include="Pinterst\API\uri.cs" />
+    <Compile Include="Pinterst\Classes\ApiRequestMessage.cs" />
+    <Compile Include="Pinterst\Classes\HttpRequestProcessor.cs" />
+    <Compile Include="Pinterst\Classes\IHttpRequestProcessor.cs" />
+    <Compile Include="Pinterst\Classes\IRequestDelay.cs" />
+    <Compile Include="Pinterst\Classes\IResult.cs" />
+    <Compile Include="Pinterst\Classes\Models\Pins\PinBoardItem.cs" />
+    <Compile Include="Pinterst\Classes\Models\Pins\PinImage.cs" />
+    <Compile Include="Pinterst\Classes\Models\Pins\PinsSearchResultItem.cs" />
+    <Compile Include="Pinterst\Classes\PinChallengeLoginInfo.cs" />
+    <Compile Include="Pinterst\Classes\PinLoginBaseResponse.cs" />
+    <Compile Include="Pinterst\Classes\RequestDelay.cs" />
+    <Compile Include="Pinterst\Classes\ResponseWrappers\BaseResponse\BaseLoadableResponse.cs" />
+    <Compile Include="Pinterst\Classes\ResponseWrappers\BaseResponse\BaseStatusResponse.cs" />
+    <Compile Include="Pinterst\Classes\ResponseWrappers\Errors\BadStatusErrorsResponse.cs" />
+    <Compile Include="Pinterst\Classes\ResponseWrappers\Errors\BadStatusErrorsResponseRecovery.cs" />
+    <Compile Include="Pinterst\Classes\ResponseWrappers\Errors\BadStatusResponse.cs" />
+    <Compile Include="Pinterst\Classes\ResponseWrappers\Errors\MessageErrorsResponse.cs" />
+    <Compile Include="Pinterst\Classes\Result.cs" />
+    <Compile Include="Pinterst\Classes\ResultInfo.cs" />
+    <Compile Include="Pinterst\Classes\StateData.cs" />
+    <Compile Include="Pinterst\Classes\UserSessionData.cs" />
+    <Compile Include="Pinterst\Enums\PinLoginResult.cs" />
+    <Compile Include="Pinterst\Enums\ResponseType.cs" />
+    <Compile Include="Pinterst\Helpers\HttpHelper.cs" />
+    <Compile Include="Pinterst\Helpers\SerializationHelper.cs" />
+    <Compile Include="Pinterst\Helpers\UriCreator.cs" />
+    <Compile Include="Pinterst\Helpers\UserAuthValidator.cs" />
+    <Compile Include="Pinterst\Logger\DebugLogger.cs" />
+    <Compile Include="Pinterst\Logger\IPinLogger.cs" />
+    <Compile Include="Pinterst\Logger\LogLevel.cs" />
+    <Compile Include="Pinterst\Classes\Models\Pins\PinUser.cs" />
+    <Compile Include="Pinterst\API\Bulider\PinApiBuilder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Graphics-Vibe-Neon-Glow-Social-Pinterest.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

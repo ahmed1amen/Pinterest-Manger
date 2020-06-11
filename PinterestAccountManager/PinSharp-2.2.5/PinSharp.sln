@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution files", "Solution files", "{B75C688B-8995-429E-9680-59D391B89792}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.cake = build.cake
+		build.ps1 = build.ps1
+		GitVersion.yml = GitVersion.yml
+		LICENSE.MD = LICENSE.MD
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinSharp", "PinSharp\PinSharp.csproj", "{DBF435BD-4C1F-403C-BF81-B9017DCE88E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PinSharp.Tests", "PinSharp.Tests\PinSharp.Tests.csproj", "{B3374B25-BD99-4DFB-A874-980CBF462153}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBF435BD-4C1F-403C-BF81-B9017DCE88E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF435BD-4C1F-403C-BF81-B9017DCE88E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF435BD-4C1F-403C-BF81-B9017DCE88E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF435BD-4C1F-403C-BF81-B9017DCE88E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3374B25-BD99-4DFB-A874-980CBF462153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3374B25-BD99-4DFB-A874-980CBF462153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3374B25-BD99-4DFB-A874-980CBF462153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3374B25-BD99-4DFB-A874-980CBF462153}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACAF897C-55F8-424B-8121-3E4CC1D10FD9}
+	EndGlobalSection
+EndGlobal
